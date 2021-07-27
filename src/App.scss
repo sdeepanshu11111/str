@@ -28,7 +28,7 @@ nav {
   height: 10vh;
   position: fixed;
   top: 0;
-  background-color: antiquewhite;
+  background-color: rgb(160, 59, 255);
   z-index: 99;
   box-shadow: -4px 5px 14px 1px #838383;
   width: 100%;
@@ -73,6 +73,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        display: none;
 
         h1 {
           font-size: 2rem;
