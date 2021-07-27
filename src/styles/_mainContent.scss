@@ -1,0 +1,53 @@
+.mainContent {
+  width: 80%;
+  height: 100%;
+
+  transition: 1s ease;
+  padding: 2rem 2rem;
+  padding-right: 0;
+
+  input {
+    width: 20%;
+    display: block;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem 0.6rem;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    padding-bottom: 0.2rem;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100%;
+    overflow-x: hidden;
+
+    .item {
+      height: 100px;
+      width: 100px;
+      background-color: #e6cccc;
+      margin: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 5rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: white;
+      }
+    }
+    :nth-child(3n + 3) {
+      background-color: rgb(116, 113, 113);
+    }
+  }
+}
+.main-content_large {
+  width: 98%;
+}

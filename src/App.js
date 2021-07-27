@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import components
+import SideBar from "./components/SideBar";
+import MainContent from "./components/MainContent";
+import { useState } from "react";
+
+// toggle
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+  const [input, setInput] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <p>Nav Bar</p>
+      </nav>
+      <div className="gridContainer">
+        <SideBar setToggle={setToggle} toggle={toggle} />
+        <MainContent setInput={setInput} input={input} toggle={toggle} />
+      </div>
     </div>
   );
 }
